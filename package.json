@@ -1,26 +1,26 @@
 {
-    "name": "three-file-island",
-    "version": "0.0.0",
-    "description": "A utility for silently and robustly mocking out JS files",
-    "keywords": [
-        "testing",
-        "mocking",
-        "test",
-        "mock",
-        "unit test",
-        "unit testing",
-        "file",
-        "files",
-        "integration test",
-        "integration testing"
-    ],
-    "bugs": "https://github.com/markasoftware/three-file-island/issues",
-    "license": "Unlicense",
-    "files": [
-        "src/"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/markasoftware/three-file-island"
-    }
+  "name": "three-file-island",
+  "version": "0.0.0",
+  "description": "A utility for silently and robustly mocking out JS files",
+  "keywords": [
+    "testing",
+    "mocking",
+    "test",
+    "mock",
+    "unit test",
+    "unit testing",
+    "file",
+    "files",
+    "integration test",
+    "integration testing"
+  ],
+  "bugs": "https://github.com/markasoftware/three-file-island/issues",
+  "license": "Unlicense",
+  "files": [
+    "src/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/markasoftware/three-file-island"
+  }
 }
