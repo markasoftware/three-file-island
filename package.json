@@ -17,10 +17,19 @@
   "bugs": "https://github.com/markasoftware/three-file-island/issues",
   "license": "Unlicense",
   "files": [
-    "src/"
+      "index.js"
   ],
+  "devDependencies": {
+      "tapes": "^4.0.0"
+  },
+  "scripts": {
+      "test": "cp test/boop.js.test test/boop.js && node test/test.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/markasoftware/three-file-island"
-  }
+    },
+    "engines":{
+        "node": ">=4.2.0"
+    }
 }
