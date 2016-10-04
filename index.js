@@ -12,7 +12,7 @@ module.exports = (parentDir, isInternal) => {
         const reset = (relativeMockPath, cb) => {
             const innerFunc = new Promise((resolve, reject) => {
                 const absMockPath = path.resolve(parentDir, relativeMockPath);
-                delete mockObjs(absMockPath);
+                delete mockObjs[absMockPath];
                 fs.rename(absMockPath + '.tfitemp', absMockPath, err => {
                     if(err) return reject(err);
                     removeFromCache(absMockPath);
@@ -50,7 +50,7 @@ module.exports = (parentDir, isInternal) => {
             reset: reset,
             resetAll: cb => {
                 const thingies = [];
-                Object.keys.forEach(cur => thingies.push(reset(cur)));
+                Object.keys(mockObjs).forEach(cur => thingies.push(reset(cur)));
                 // conventions, my old friend
                 const innerFunc = Promise.all(thingies);
 

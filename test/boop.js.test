@@ -1,0 +1,2 @@
+module.exports = () => 'yap';
+module.exports.clap = true;
