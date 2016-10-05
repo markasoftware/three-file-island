@@ -79,6 +79,23 @@ test('everything', t => {
         });
     });
 
+    t.test('callback', t => {
+        const tfi = require('../index.js')(__dirname);
+        tfi.mock('./boop.js', {fake: true}, err => {
+            t.notOk(err);
+            t.equal(require('./boop.js').fake, true);
+            t.end();
+        });
+    });
+
+    t.test('absolute path', t => {
+        const tfi = require('../index.js')(__dirname);
+        tfi.mock(__dirname + '/boop.js', {fake: 'gotcha'}).then(() => {
+            t.equal(require('./boop.js').fake, 'gotcha');
+            t.end();
+        });
+    })
+
     t.end();
 
 });

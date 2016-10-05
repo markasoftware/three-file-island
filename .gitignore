@@ -1,6 +1,7 @@
 .swp
 test/yoop.js
 test/boop.js
+test/*.tfitemp
 
 # Logs
 logs
