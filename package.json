@@ -1,6 +1,6 @@
 {
   "name": "three-file-island",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A utility for silently and robustly mocking out JS files",
   "keywords": [
     "testing",
